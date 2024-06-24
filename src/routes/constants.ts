@@ -1,0 +1,3 @@
+export const ROUTES = {
+  APPLOGINSCREEN: '@ROUTES/APPLOGINSCREEN',
+};
