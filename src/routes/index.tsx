@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { ROUTES } from './constants';
 import { NavigationContainer } from '@react-navigation/native';
 import NavigationService from '../utils/NavigationService';
-import AppLoginScreen from '../screens/AppLoginScreen';
+import Holdings from '../screens/Holdings';
 
 const Routes = () => {
   const Stack = createStackNavigator();
@@ -12,12 +12,12 @@ const Routes = () => {
       ref={(ref) => NavigationService.setTopLevelNavigator(ref)}
     >
       <Stack.Navigator
-        initialRouteName={ROUTES.APPLOGINSCREEN}
+        initialRouteName={ROUTES.HOLDINGS}
         screenOptions={{ headerShown: false }}
       >
         <Stack.Screen
-          name={ROUTES.APPLOGINSCREEN}
-          component={AppLoginScreen}
+          name={ROUTES.HOLDINGS}
+          component={Holdings}
         />
       </Stack.Navigator>
     </NavigationContainer>
